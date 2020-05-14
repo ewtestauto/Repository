@@ -41,31 +41,31 @@ ${surrID_CR}        40104317AABW2558
 BFI-700 VISA Combo Primary setup
 
    Connect to mainframe
-   Select TSO/CICS     ${CICS}
-   Select UDFL pool    ${CompanyNumber}   ${DB2pool}
-   ${OnlineDT_HGN}  ${DYYMMDD}  ${today_yymmddhhmmss}  ${today_yymmdd}  ${today_HHMMSS}  ${BatchDT}  ${OnlineDT}  ${NextDT}=      Read IICF dates
-   Close session       ${CICS}
+#   Select TSO/CICS     ${CICS}
+#   Select UDFL pool    ${CompanyNumber}   ${DB2pool}
+#   ${OnlineDT_HGN}  ${DYYMMDD}  ${today_yymmddhhmmss}  ${today_yymmdd}  ${today_HHMMSS}  ${BatchDT}  ${OnlineDT}  ${NextDT}=      Read IICF dates
+#   Close session       ${CICS}
 
-   Select TSO/CICS     ${TSO}
-   Logon TSTAUTO
+ #  Select TSO/CICS     ${TSO}
+ #  Logon TSTAUTO
 
-   Copy dataset        TSTAUTO.SETUP.COMBO.PRI.TEMPLATE      TSTAUTO.SETUP.CMB.PRI.D${today_yymmdd}.T${today_HHMMSS}
-   Edit dataset        TSTAUTO.SETUP.CMB.PRI.D${today_yymmdd}.T${today_HHMMSS}
-   ${RequestID}=        Set Variable    ${RequestID_head}${today_yymmddhhmmss}
-   ${today_HHMM}=       get substring   ${today_HHMMSS}  0  4
-   ${PersonalID}=       Set Variable    ${today_yymmdd}-${today_HHMM}
-   Edit fields          ${RequestID}    ${PersonalID}
-   Load table 158T     TSTAUTO.SETUP.CMB.PRI.D${today_yymmdd}.T${today_HHMMSS}
+ #  Copy dataset        TSTAUTO.SETUP.COMBO.PRI.TEMPLATE      TSTAUTO.SETUP.CMB.PRI.D${today_yymmdd}.T${today_HHMMSS}
+ #  Edit dataset        TSTAUTO.SETUP.CMB.PRI.D${today_yymmdd}.T${today_HHMMSS}
+ #  ${RequestID}=        Set Variable    ${RequestID_head}${today_yymmddhhmmss}
+ #  ${today_HHMM}=       get substring   ${today_HHMMSS}  0  4
+ #  ${PersonalID}=       Set Variable    ${today_yymmdd}-${today_HHMM}
+ #  Edit fields          ${RequestID}    ${PersonalID}
+ #  Load table 158T     TSTAUTO.SETUP.CMB.PRI.D${today_yymmdd}.T${today_HHMMSS}
 
-   Select TSO/CICS     ${CICS}
+ #  Select TSO/CICS     ${CICS}
 
-   ${surrID_CR}     ${surrID_DR}=   Run XOBK and retrieve new plastic id    ${RequestID}
-   ${expDT_ddmmyyyy}=   Calc expiry date     ${OnlineDT}
-   ${pl_id_CR}  ${pl_id_DR}  ${ac_cd_CR}  ${ac_cd_DR}=     Check CUPR   ${PersonalID}
+ #  ${surrID_CR}     ${surrID_DR}=   Run XOBK and retrieve new plastic id    ${RequestID}
+ #  ${expDT_ddmmyyyy}=   Calc expiry date     ${OnlineDT}
+ #  ${pl_id_CR}  ${pl_id_DR}  ${ac_cd_CR}  ${ac_cd_DR}=     Check CUPR   ${PersonalID}
 
-   Check XDVL   ${surrID_CR}    ${expDT_ddmmyyyy}
-   Check XDVD   ${surrID_CR}    ${expDT_ddmmyyyy}   ${OnlineDT}  ${FirstName}    ${Surname}  ${LoyaltyNBR}
-   Check CASP   ${surrID_CR}    ${pl_id_CR}     ${ac_cd_CR}     ${FirstName}    ${Surname}      ${OnlineDT}     ${DOB}  ${PersonalID}
+ #  Check XDVL   ${surrID_CR}    ${expDT_ddmmyyyy}
+ #  Check XDVD   ${surrID_CR}    ${expDT_ddmmyyyy}   ${OnlineDT}  ${FirstName}    ${Surname}  ${LoyaltyNBR}
+ #  Check CASP   ${surrID_CR}    ${pl_id_CR}     ${ac_cd_CR}     ${FirstName}    ${Surname}      ${OnlineDT}     ${DOB}  ${PersonalID}
 
 *** Keywords ***
 
