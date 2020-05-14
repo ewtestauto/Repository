@@ -41,7 +41,7 @@ ${surrID_CR}        40104317AABW2558
 BFI-700 VISA Combo Primary setup
 
    Connect to mainframe
-#prova commento per merge
+#prova commento per merge 2
    Select TSO/CICS     ${CICS}
    Select UDFL pool    ${CompanyNumber}   ${DB2pool}
    ${OnlineDT_HGN}  ${DYYMMDD}  ${today_yymmddhhmmss}  ${today_yymmdd}  ${today_HHMMSS}  ${BatchDT}  ${OnlineDT}  ${NextDT}=      Read IICF dates
