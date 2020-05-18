@@ -10,8 +10,7 @@ asdasdasdasd
 *** Variables ***
 TA1
 
-
-
+TESTAUTO2
 *** Keywords ***
 
 Select menu Option
