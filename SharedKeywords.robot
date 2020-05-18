@@ -6,7 +6,7 @@ Library    user_password
 Library    builtin
 Library    String
 
-
+asdasdasdasd
 *** Variables ***
 
 
@@ -23,7 +23,7 @@ Select menu Option
     Send enter
     Find Field     ${Option}    RIGHT
     Send string    S
-    Send enter
+    Send enterasdasdasd
     Sleep          2 seconds
     Log screen
 
