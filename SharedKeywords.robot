@@ -9,8 +9,7 @@ Library    String
 asdasdasdasd
 *** Variables ***
 
-
-TA2
+TESTAUTO2
 *** Keywords ***
 
 Select menu Option
