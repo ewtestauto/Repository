@@ -1,4 +1,5 @@
-*** Settings ***
+1*** Settings ***
+1*** Settings ***
 Documentation  Includes keywords defined within _*BFI-700.robot*_ file.
 ...
 ...  Path to the file: _*\\PyCharm\\Adriano*_
@@ -11,8 +12,8 @@ Library     calendar
 Library     excelLibrary
 #Test Setup       Open Application
 Test Teardown    Close Application
-qwqeqweqwqwqwffqqf
-sdasdasdasdasd
+
+
 #notes
 #   ${newaccount}=  Remove String  ${newaccount}  -  *
 
@@ -41,32 +42,32 @@ ${surrID_CR}        40104317AABW2558
 BFI-700 VISA Combo Primary setup
 
    Connect to mainframe
-#prova commento per merge 2
    Select TSO/CICS     ${CICS}
    Select UDFL pool    ${CompanyNumber}   ${DB2pool}
    ${OnlineDT_HGN}  ${DYYMMDD}  ${today_yymmddhhmmss}  ${today_yymmdd}  ${today_HHMMSS}  ${BatchDT}  ${OnlineDT}  ${NextDT}=      Read IICF dates
    Close session       ${CICS}
 
- #  Select TSO/CICS     ${TSO}
- #  Logon TSTAUTO
+   Select TSO/CICS     ${TSO}
+   Logon TSTAUTO
 
- #  Copy dataset        TSTAUTO.SETUP.COMBO.PRI.TEMPLATE      TSTAUTO.SETUP.CMB.PRI.D${today_yymmdd}.T${today_HHMMSS}
- #  Edit dataset        TSTAUTO.SETUP.CMB.PRI.D${today_yymmdd}.T${today_HHMMSS}
- #  ${RequestID}=        Set Variable    ${RequestID_head}${today_yymmddhhmmss}
- #  ${today_HHMM}=       get substring   ${today_HHMMSS}  0  4
- #  ${PersonalID}=       Set Variable    ${today_yymmdd}-${today_HHMM}
- #  Edit fields          ${RequestID}    ${PersonalID}
- #  Load table 158T     TSTAUTO.SETUP.CMB.PRI.D${today_yymmdd}.T${today_HHMMSS}
+   # cambiare con ICPS.ITST.TESTAUTO*
+   Copy dataset        TSTAUTO.SETUP.COMBO.PRI.TEMPLATE      TSTAUTO.SETUP.CMB.PRI.D${today_yymmdd}.T${today_HHMMSS}
+   Edit dataset        TSTAUTO.SETUP.CMB.PRI.D${today_yymmdd}.T${today_HHMMSS}
+   ${RequestID}=        Set Variable    ${RequestID_head}${today_yymmddhhmmss}
+   ${today_HHMM}=       get substring   ${today_HHMMSS}  0  4
+   ${PersonalID}=       Set Variable    ${today_yymmdd}-${today_HHMM}
+   Edit fields          ${RequestID}    ${PersonalID}
+   Load table 158T     TSTAUTO.SETUP.CMB.PRI.D${today_yymmdd}.T${today_HHMMSS}
 
- #  Select TSO/CICS     ${CICS}
+   Select TSO/CICS     ${CICS}
 
- #  ${surrID_CR}     ${surrID_DR}=   Run XOBK and retrieve new plastic id    ${RequestID}
- #  ${expDT_ddmmyyyy}=   Calc expiry date     ${OnlineDT}
- #  ${pl_id_CR}  ${pl_id_DR}  ${ac_cd_CR}  ${ac_cd_DR}=     Check CUPR   ${PersonalID}
+   ${surrID_CR}     ${surrID_DR}=   Run XOBK and retrieve new plastic id    ${RequestID}
+   ${expDT_ddmmyyyy}=   Calc expiry date     ${OnlineDT}
+   ${pl_id_CR}  ${pl_id_DR}  ${ac_cd_CR}  ${ac_cd_DR}=     Check CUPR   ${PersonalID}
 
- #  Check XDVL   ${surrID_CR}    ${expDT_ddmmyyyy}
- #  Check XDVD   ${surrID_CR}    ${expDT_ddmmyyyy}   ${OnlineDT}  ${FirstName}    ${Surname}  ${LoyaltyNBR}
- #  Check CASP   ${surrID_CR}    ${pl_id_CR}     ${ac_cd_CR}     ${FirstName}    ${Surname}      ${OnlineDT}     ${DOB}  ${PersonalID}
+   Check XDVL   ${surrID_CR}    ${expDT_ddmmyyyy}
+   Check XDVD   ${surrID_CR}    ${expDT_ddmmyyyy}   ${OnlineDT}  ${FirstName}    ${Surname}  ${LoyaltyNBR}
+   Check CASP   ${surrID_CR}    ${pl_id_CR}     ${ac_cd_CR}     ${FirstName}    ${Surname}      ${OnlineDT}     ${DOB}  ${PersonalID}
 
 *** Keywords ***
 
@@ -111,24 +112,6 @@ Check CUPR
 
     [Return]    ${pl_id_CR}  ${pl_id_DR}  ${ac_cd_CR}  ${ac_cd_DR}
 
-
-Run XOBK and retrieve new plastic id
-    [Arguments]     ${req_ID}
-
-
-    sleep   2 seconds
-    send string     XOBK ${req_ID}
-    sleep   5 seconds
-    send enter
-    sleep   2 seconds
-    String found     1    34    REQUEST SUCCESSFUL
-
-    ${surrID_CR}=  string get  6  14
-    ${surrID_DR}=  string get  7  57
-    sleep       10 seconds
-    log screen
-
-    [Return]    ${surrID_CR}     ${surrID_DR}
 
 Calc expiry date
 
@@ -288,133 +271,10 @@ Check XDVL
 
     send clear
 
-Set environment
-    [Arguments]     ${Env}
-
-
-Send option
-    [Arguments]     ${Option}
-    Fill field by label      Option ===>     ${Option}
-    send enter
-
-Send command
-    [Arguments]     ${Command}
-    Fill field by label      Command ===>     ${Command}
-    send enter
-
-Copy dataset
-    [Arguments]     ${DSNin}    ${DSNout}
-    Send string    3.4
-    send enter
-    send tab
-    execute command     EraseEOF
-    Fill field by label     Dsname  ${DSNin}
-    send enter
-    execute command     Newline
-    Send string    CO
-    log screen
-    send enter
-    Send string    '${DSNout}'
-    send enter
-    send string    1
-    send enter
-    Log screen
-    execute command     Newline
-    execute command     Newline
-    log screen
-    send string          =X
-    send enter
-    send string     ISPF
-    send enter
-    log screen
-
-
-Edit dataset
-    [Arguments]     ${DSname}
-    Send option    3.4
-    execute command     EraseEOF
-    Fill field by label     Dsname  ${DSname}
-    send enter
-    send tab
-    send tab
-    Send string    E
-    Send enter
-    send enter
-
-
-Connect to mainframe
-    connect    Y:192.168.14.6:2399
-    ${Cams user}    Credential getter    Cams user
-    Fill field by label    Userid:      ${Cams user.user}
-    Set log level    None
-    Fill field by label    Password:    ${Cams user.password}
-    Set log level    Info
-    String found     12    25    P A Y M E N T \ \ S E R V I C E S \ \ F O R \ \ E U R O P E
-    Send enter
-    Wait for field
-    log screen
-
-Select TSO/CICS
-    [Arguments]     ${Option}
-
-    send pf         24
-    send pf7
-    log screen
-    send string     FIND ${Option}
-    log screen
-    send enter
-    send tab
-    Send string     S
-    log screen
-    Send enter
-    ${not found}=  string get  1  31
-    Run keyword if  '${not found}'=='CICS Sign On'  Login to CICS
-
-Close session
-    [Arguments]    ${Option}
-    send pf         24
-    send pf7
-    log screen
-    send string     FIND ${Option}
-    log screen
-    send enter
-    send tab
-    Send string     I
-    log screen
-    Send enter
 
 
 
-Login to CICS
-    send string     TSTAUTO
-    send tab
-    send string     Equens01
-    send enter
 
-Logon TSTAUTO
-    send pf3
-    send pf3
-    send string     LOGON
-    send enter
-    send string     TSTAUTO
-    send enter
-    Fill field by label      Password   Equens01
- #   Find Field     -Reconnect    RIGHT
- #   Send string    S
-    Send enter
-    send string     ISPF
-    send enter
-
-Select UDFL pool
-    [Arguments]    ${CompanyNumber}     ${DB2pool}
-    Send string           UDFL
-    Send enter
-    Fill field by label    Company Number =====>  ${CompanyNumber}
-    Fill field by label    DB2 Test Pool ID ===>  ${DB2pool}
-    send PF4
-    Send clear
-    Log screen
-    Sleep     2 seconds
 
 Open CAAD screen with plastic
     [Arguments]     ${PL_ID}
@@ -451,130 +311,4 @@ File Manager Edit
     Find Field     1. Above    RIGHT
     Send string    1
     Send enter
-
-Edit fields
-
-    [Arguments]     ${RequestID}    ${PersonalID}
-
-    log screen
-    # X69227-RequestID             Pic X(36).
-    send command     zexpand
-    send enter
-    send string      c 'ID10001YYYYMMDDXXXXXXXXXX'
-    send tab
-    send string      '${RequestID}' ALL
-    send pf3
-    send enter
-    log  '${RequestID}'
-# X69261-PERSONALID PIC  X(16)
-    send command     zexpand
-    send enter
-    send string      c 'PERSONALIDX'
-    send tab
-    send string      '${PersonalID}'
-    send pf3
-    send enter
-    log  '${PersonalID}'
-# X69261-FIRSTNAME  PIC  X(20)
-    send command     zexpand
-    send enter
-    send string      c 'FIRSTNAMEXXXXXXXXXXX'
-    send tab
-    send string      '${FirstName}' ALL
-    send pf3
-    send enter
-    log  '${FirstName}' ALL
-# X69261-SURNAME    PIC  X(25)
-    send command     zexpand
-    send enter
-    send string      c 'SURNAMEXXXXXXXXXXXXXXXXXX'
-    send tab
-    send string      '${Surname}' ALL
-    send pf3
-    send enter
-    log  '${Surname}' ALL
-
-
-# PRODUCT KEY
-    send command     zexpand
-    send enter
-    send string      c 'PRDKEYXXXX01'
-    send tab
-    send string      '${ProductKey}'
-    send pf3
-    send enter
-    log  '${ProductKey}'
-
-# Date of birth
-    send command     zexpand
-    send enter
-    send string      c '19780101'
-    send tab
-    send string      '${DOB}'
-    send pf3
-    send enter
-    log  '${DOB}'
-
-# LOYALTY
-    send command     zexpand
-    send enter
-    send string      c 'LOYALTYNBR'
-    send tab
-    send string      '${LoyaltyNBR}'
-    send pf3
-    send enter
-    send pf3
-    log  '${LoyaltyNBR}'
-
-    send command     =X
-    send enter
-    send string     ISPF
-    send enter
-    log screen
-
-
-Load table 158T
-
-    [Arguments]     ${DSN}
-
-    send string     TWS
-    send enter
-    send string     5.1
-    send enter
-    execute command     EraseEOF
-    send string     TESTJOBESTEMPOR
-    send enter
-    send enter
-    send enter
-    send enter
-    ${a}=           string get  18  26
-    send string     ${a}
-    send command    op
-    execute command     Newline
-    execute command     Newline
-    send string         J
-    send tab
-    send tab
-    send tab
-    send tab
-    send string         TSTAUTO1
-    log screen
-    send enter
-    send string         COPY 'TSTAUTO.JOBLIB(LOAD158A)'
-    send enter
-    send string         C 'XX1' '${DSN}'
-    send enter
-    log screen
-    send pf3
-    send pf3
-    send pf3
-
-    sleep               35 seconds
-
-
-    send command        =X
-
-
-
-
 

@@ -1,0 +1,21 @@
+
+robot  -l NEXI/01a.plastic_setup/logs/01a.01logs/01log.html  -r NEXI/01a.plastic_setup/logs/01a.01logs/01report.html  NEXI/01a.plastic_setup/1adot1pre-batch.robot
+
+robot  -l NEXI/01a.plastic_setup/logs/01a.02logs/02log.html  -r NEXI/01a.plastic_setup/logs/01a.02logs/02report.html  NEXI/01a.plastic_setup/1adot2pre-batch.robot
+
+robot  -l NEXI/01a.plastic_setup/logs/01a.03logs/03log.html  -r NEXI/01a.plastic_setup/logs/01a.03logs/03report.html  NEXI/01a.plastic_setup/1adot3pre-batch.robot
+
+robot  -l NEXI/01a.plastic_setup/logs/01a.04logs/04log.html  -r NEXI/01a.plastic_setup/logs/01a.04logs/04report.html  NEXI/01a.plastic_setup/1adot4pre-batch.robot
+
+
+
+
+
+
+robot  -l NEXI/01a.plastic_setup/logs/01a.01logs/01postlog.html  -r NEXI/01a.plastic_setup/logs/01a.01logs/01postreport.html  NEXI/01a.plastic_setup/1adot1post-batch.robot
+
+robot  -l NEXI/01a.plastic_setup/logs/01a.02logs/02postlog.html  -r NEXI/01a.plastic_setup/logs/01a.02logs/02postreport.html  NEXI/01a.plastic_setup/1adot2post-batch.robot
+
+robot  -l NEXI/01a.plastic_setup/logs/01a.03logs/03postlog.html  -r NEXI/01a.plastic_setup/logs/01a.03logs/03postreport.html  NEXI/01a.plastic_setup/1adot3post-batch.robot
+
+robot  -l NEXI/01a.plastic_setup/logs/01a.04logs/04postlog.html  -r NEXI/01a.plastic_setup/logs/01a.04logs/04postreport.html  NEXI/01a.plastic_setup/1adot4post-batch.robot

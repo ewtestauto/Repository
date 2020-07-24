@@ -1,0 +1,12 @@
+
+add address as variable
+
+in post-batch verify all plastics with the latest date
+    from the file retrieve separately a list of plastics for the test case and the embossing file
+
+change keywords to have arguments
+
+
+
+TODO parser jeszcze nie działa  - wykrzacza się przy kilkuwyrazowych nazwach miejsca zamieszkania
+    również trzeba się pozbyć krzaczków z tego pliku

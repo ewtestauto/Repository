@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.8.1 on win32)" generated="20200618 12:59:24.344" rpa="false">
+<suite id="s1" name="1Adot1Pre-Batch" source="C:\RobotFramework\PyCharm\NEXI\01a.plastic_setup\1adot1pre-batch.robot">
+<test id="s1-t1" name="01adot01pre-batch">
+<kw name="Test setup for Plastic Setup" library="PlasticSetupKeywords" type="setup">
+<doc>Test Setup for all tests for Plastic Setup process using in part `Settings`.</doc>
+<arguments>
+<arg>${environment_name}</arg>
+</arguments>
+<kw name="Set environment2" library="Environments">
+<arguments>
+<arg>${environment name}</arg>
+</arguments>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<arguments>
+<arg>&amp;{environment}</arg>
+<arg>owner=</arg>
+<arg>appprefix=</arg>
+<arg>jobprefix=</arg>
+<arg>datasetprefix=</arg>
+<arg>cicsk=</arg>
+<arg>companynumber=</arg>
+<arg>pool=</arg>
+<arg>examplecompanyid=</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:24.907" endtime="20200618 12:59:24.922"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${environment name}'=='RLSEI'</arg>
+<arg>Set RLSEI</arg>
+</arguments>
+<kw name="Set RLSEI" library="Environments">
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${environment}</arg>
+<arg>owner=RLSEI</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${environment}</arg>
+<arg>appprefix=ICP</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${environment}</arg>
+<arg>jobprefix=DBI</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${environment}</arg>
+<arg>datasetprefix=icps.rlse.icr</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${environment}</arg>
+<arg>cicsk=CK35</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${environment}</arg>
+<arg>companynumber=30000</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${environment}</arg>
+<arg>pool=${SPACE * 2}</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${environment}</arg>
+<arg>examplecompanyid=03104</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${environment name}'=='SITITA04'</arg>
+<arg>Set SITITA04</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${environment name}'=='IC6'</arg>
+<arg>Set IC6</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${environment name}'=='IC7'</arg>
+<arg>Set IC7</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:24.922"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:24.907" endtime="20200618 12:59:24.922"></status>
+</kw>
+<kw name="Connect To Mainframe" library="SharedKeywords">
+<doc>Connects to Mainframe using the following properties:</doc>
+<kw name="Connect" library="py3270lib">
+<doc>Connect to a host</doc>
+<arguments>
+<arg>Y:192.168.14.6:2399</arg>
+</arguments>
+<msg timestamp="20200618 12:59:25.953" level="WARN">[WinError 10061] No connection could be made because the target machine actively refused it</msg>
+<msg timestamp="20200618 12:59:28.000" level="WARN">[WinError 10061] No connection could be made because the target machine actively refused it</msg>
+<msg timestamp="20200618 12:59:30.047" level="WARN">[WinError 10061] No connection could be made because the target machine actively refused it</msg>
+<msg timestamp="20200618 12:59:32.094" level="WARN">[WinError 10061] No connection could be made because the target machine actively refused it</msg>
+<msg timestamp="20200618 12:59:34.110" level="WARN">[WinError 10061] No connection could be made because the target machine actively refused it</msg>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:35.626"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2 seconds</arg>
+</arguments>
+<msg timestamp="20200618 12:59:37.641" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200618 12:59:35.626" endtime="20200618 12:59:37.641"></status>
+</kw>
+<kw name="Credential Getter" library="user_password">
+<arguments>
+<arg>Cams user</arg>
+</arguments>
+<assign>
+<var>${Cams user}</var>
+</assign>
+<msg timestamp="20200618 12:59:37.641" level="INFO">${Cams user} = &lt;user_password.user_password.credential_getter.&lt;locals&gt;._cred_getter object at 0x000001F2C7239EE0&gt;</msg>
+<status status="PASS" starttime="20200618 12:59:37.641" endtime="20200618 12:59:37.641"></status>
+</kw>
+<kw name="Fill Field By Label" library="py3270lib">
+<arguments>
+<arg>Userid:</arg>
+<arg>${Cams user.user}</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:37.641" endtime="20200618 12:59:37.860"></status>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<arguments>
+<arg>None</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:37.860" endtime="20200618 12:59:37.860"></status>
+</kw>
+<kw name="Fill Field By Label" library="py3270lib">
+<arguments>
+<arg>Password:</arg>
+<arg>${Cams user.password}</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:37.860" endtime="20200618 12:59:38.297"></status>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<arguments>
+<arg>Info</arg>
+</arguments>
+<msg timestamp="20200618 12:59:38.297" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200618 12:59:38.297" endtime="20200618 12:59:38.297"></status>
+</kw>
+<kw name="String Found" library="py3270lib">
+<doc>String Found verifies the the specified string (exactly) is found at the specified location.</doc>
+<arguments>
+<arg>12</arg>
+<arg>25</arg>
+<arg>P A Y M E N T \ \ S E R V I C E S \ \ F O R \ \ E U R O P E</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:38.297" endtime="20200618 12:59:38.297"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 12:59:38.297" endtime="20200618 12:59:38.751"></status>
+</kw>
+<kw name="Wait For Field" library="py3270lib">
+<doc>Wait until the screen is ready, the cursor has been positioned
+on a modifiable field, and the keyboard is unlocked.
+Sometimes the server will "unlock" the keyboard but the screen will
+not yet be ready.  In that case, an attempt to read or write to the
+screen will result in a 'E' keyboard status because we tried to
+read from a screen that is not yet ready.
+Using this method tells the client to wait until a field is
+detected and the cursor has been positioned on it.</doc>
+<status status="PASS" starttime="20200618 12:59:38.751" endtime="20200618 12:59:38.751"></status>
+</kw>
+<kw name="Log Screen" library="py3270lib">
+<doc>Log Screen adds an image of the current screen from the terminal emulator to the Robot
+Framework test log.</doc>
+<msg timestamp="20200618 12:59:38.751" level="INFO" html="yes">&lt;html&gt;
+&lt;head&gt;
+ &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+&lt;/head&gt;
+ &lt;body&gt;
+  &lt;table border=0&gt;&lt;tr bgcolor=black&gt;&lt;td&gt;&lt;pre&gt;&lt;span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"&gt;                  &lt;/span&gt;&lt;span style="color:white;background:black;font-weight:normal;font-style:normal"&gt; MENU TUBES PER    EQTAUT4                &lt;/span&gt;&lt;span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"&gt; Panelid  - MIOMENU 
+&lt;/span&gt;&lt;span style="color:red;background:black;font-weight:bold;font-style:normal"&gt; TII4012I Signon complete for EQTAUT4 IP address 192.168.50.130 PORT 60656      
+&lt;/span&gt;&lt;span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"&gt;                                                             Terminal - TCPBDMZ8
+ Menu=PF23         Jump=PF24         Help=PF1                Model    - 3278-4E 
+ Fwd=PF8           Bwd=PF7                                   System   - PRDB    
+                                                                                
+    &lt;/span&gt;&lt;span style="color:white;background:black;font-weight:normal;font-style:normal"&gt; Sessid&lt;/span&gt;&lt;span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"&gt;     &lt;/span&gt;&lt;span style="color:white;background:black;font-weight:normal;font-style:normal"&gt; Sesskey&lt;/span&gt;&lt;span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"&gt;    &lt;/span&gt;&lt;span style="color:white;background:black;font-weight:normal;font-style:normal"&gt; Descrizione Sessione&lt;/span&gt;&lt;span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"&gt;           &lt;/span&gt;&lt;span style="color:white;background:black;font-weight:normal;font-style:normal"&gt; Stato&lt;/span&gt;&lt;span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"&gt;              
+                                                                                
+  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:bold;font-style:normal"&gt;  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt; S5TSO       PF          EGKT------TSO ON DEV                               
+  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:bold;font-style:normal"&gt;  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt; TST         PF          TSO - TST1                                         
+  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:bold;font-style:normal"&gt;  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt; SART        PF          SAR - TST1                                         
+  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:bold;font-style:normal"&gt;  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt; SAREGKT     PF          SAR - EGKT                                         
+  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:bold;font-style:normal"&gt;  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt; CK0A        PF          EGKT - NEW CICS A progetto SAAN                    
+  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:bold;font-style:normal"&gt;  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt; CK23A       PF          EGKT-CICSK23-COL1(CAMS) A                          
+  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:bold;font-style:normal"&gt;  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt; CK23B       PF          EGKT-CICSK23-COL1(CAMS) B                          
+  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:bold;font-style:normal"&gt;  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt; CK25        PF          EGKT------QUALITY ASSURANCE                        
+  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:bold;font-style:normal"&gt;  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt; CK0B        PF          EGKT - NEW CICS B progetto SAAN                    
+  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:bold;font-style:normal"&gt;  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt; GROT        PF          GEN. RES. BLT/? TOR SAANA EGKT                     
+  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:bold;font-style:normal"&gt;  &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt; CK35        PF          EGKT-CICSK35-(TEST RLSE)                           
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+&lt;/span&gt;&lt;span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"&gt;                                                                                
+&lt;/span&gt;&lt;span style="color:white;background:black;font-weight:normal;font-style:normal"&gt; Comando ===&amp;gt;&lt;/span&gt;&lt;span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"&gt; &lt;/span&gt;&lt;span style="color:black;background:red;font-weight:normal;font-style:normal"&gt; &lt;/span&gt;&lt;span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"&gt;                                                                &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt; 
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</msg>
+<status status="PASS" starttime="20200618 12:59:38.751" endtime="20200618 12:59:38.751"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:24.922" endtime="20200618 12:59:38.751"></status>
+</kw>
+<kw name="Log out of TSO session" library="SharedKeywords">
+<doc>Logs out of TSO session using *S5TSO* `Sessid`.</doc>
+<kw name="Send Pf" library="py3270lib">
+<arguments>
+<arg>24</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:38.751" endtime="20200618 12:59:38.751"></status>
+</kw>
+<kw name="Send Pf7" library="py3270lib">
+<status status="PASS" starttime="20200618 12:59:38.751" endtime="20200618 12:59:38.766"></status>
+</kw>
+<kw name="Fill Field By Label" library="py3270lib">
+<arguments>
+<arg>Comando ===&gt;</arg>
+<arg>FIND S5TSO</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:38.766" endtime="20200618 12:59:41.391"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 12:59:41.391" endtime="20200618 12:59:41.813"></status>
+</kw>
+<kw name="Find Field" library="py3270lib">
+<doc>:returns:  tuple consisting of row, column</doc>
+<arguments>
+<arg>S5TSO</arg>
+<arg>RIGHT</arg>
+</arguments>
+<msg timestamp="20200618 12:59:42.141" level="INFO">to_right_end=80</msg>
+<status status="PASS" starttime="20200618 12:59:41.813" endtime="20200618 12:59:42.251"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>i</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:42.251" endtime="20200618 12:59:42.251"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 12:59:42.251" endtime="20200618 12:59:42.672"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200618 12:59:43.672" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200618 12:59:42.672" endtime="20200618 12:59:43.672"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:38.751" endtime="20200618 12:59:43.672"></status>
+</kw>
+<kw name="Log out of CICSK session" library="SharedKeywords">
+<doc>Logs out of CICSK session using name of CICSK (e.g. CK35) that is set in `Set environment` Keyword.</doc>
+<kw name="Send Pf" library="py3270lib">
+<arguments>
+<arg>24</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:43.672" endtime="20200618 12:59:43.672"></status>
+</kw>
+<kw name="Send Pf7" library="py3270lib">
+<status status="PASS" starttime="20200618 12:59:43.672" endtime="20200618 12:59:43.672"></status>
+</kw>
+<kw name="Fill Field By Label" library="py3270lib">
+<arguments>
+<arg>Comando ===&gt;</arg>
+<arg>FIND &amp;{environment}[cicsk]</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:43.672" endtime="20200618 12:59:46.298"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 12:59:46.298" endtime="20200618 12:59:46.735"></status>
+</kw>
+<kw name="Find Field" library="py3270lib">
+<doc>:returns:  tuple consisting of row, column</doc>
+<arguments>
+<arg>&amp;{environment}[cicsk]</arg>
+<arg>RIGHT</arg>
+</arguments>
+<msg timestamp="20200618 12:59:47.063" level="INFO">to_right_end=80</msg>
+<status status="PASS" starttime="20200618 12:59:46.735" endtime="20200618 12:59:47.173"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>i</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:47.173" endtime="20200618 12:59:47.173"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 12:59:47.173" endtime="20200618 12:59:47.594"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200618 12:59:48.597" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200618 12:59:47.594" endtime="20200618 12:59:48.597"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:43.672" endtime="20200618 12:59:48.597"></status>
+</kw>
+<kw name="Set UDFL" library="SharedKeywords">
+<doc>Sets CICSK parameters in UDFL using company number and pool that are set in `Set environment` Keyword.</doc>
+<kw name="Return From Keyword If" library="BuiltIn">
+<doc>Returns from the enclosing user keyword if ``condition`` is true.</doc>
+<arguments>
+<arg>'&amp;{environment}[owner]'=='IC6'</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:48.597" endtime="20200618 12:59:48.597"></status>
+</kw>
+<kw name="Go to CICSK" library="SharedKeywords">
+<doc>Opens CICSK session using name of CICSK (e.g. CK35) that is set in `Set environment` Keyword.</doc>
+<kw name="Select menu Option" library="SharedKeywords">
+<doc>Selects given *${Option}* from Menu Tubes screen.</doc>
+<arguments>
+<arg>&amp;{environment}[cicsk]</arg>
+</arguments>
+<kw name="Send Pf" library="py3270lib">
+<arguments>
+<arg>24</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:48.597" endtime="20200618 12:59:48.597"></status>
+</kw>
+<kw name="Send Pf7" library="py3270lib">
+<status status="PASS" starttime="20200618 12:59:48.597" endtime="20200618 12:59:48.597"></status>
+</kw>
+<kw name="Fill Field By Label" library="py3270lib">
+<arguments>
+<arg>Comando ===&gt;</arg>
+<arg>FIND ${Option}</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:48.597" endtime="20200618 12:59:51.222"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 12:59:51.222" endtime="20200618 12:59:51.644"></status>
+</kw>
+<kw name="Find Field" library="py3270lib">
+<doc>:returns:  tuple consisting of row, column</doc>
+<arguments>
+<arg>${Option}</arg>
+<arg>RIGHT</arg>
+</arguments>
+<msg timestamp="20200618 12:59:51.972" level="INFO">to_right_end=80</msg>
+<status status="PASS" starttime="20200618 12:59:51.644" endtime="20200618 12:59:52.081"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>S</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:52.081" endtime="20200618 12:59:52.081"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 12:59:52.081" endtime="20200618 12:59:52.519"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2 seconds</arg>
+</arguments>
+<msg timestamp="20200618 12:59:54.519" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200618 12:59:52.519" endtime="20200618 12:59:54.519"></status>
+</kw>
+<kw name="Log Screen" library="py3270lib">
+<doc>Log Screen adds an image of the current screen from the terminal emulator to the Robot
+Framework test log.</doc>
+<msg timestamp="20200618 12:59:54.519" level="INFO" html="yes">&lt;html&gt;
+&lt;head&gt;
+ &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+&lt;/head&gt;
+ &lt;body&gt;
+  &lt;table border=0&gt;&lt;tr bgcolor=black&gt;&lt;td&gt;&lt;pre&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt;&lt;/span&gt;&lt;span style="color:black;background:red;font-weight:normal;font-style:normal"&gt; &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt;                                                                               
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</msg>
+<status status="PASS" starttime="20200618 12:59:54.519" endtime="20200618 12:59:54.519"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:48.597" endtime="20200618 12:59:54.519"></status>
+</kw>
+<kw name="Send Clear" library="py3270lib">
+<status status="PASS" starttime="20200618 12:59:54.519" endtime="20200618 12:59:54.940"></status>
+</kw>
+<kw name="XCSR" library="SharedKeywords">
+<doc>Opens refreshed screen of CICSK.</doc>
+<kw name="Send Clear" library="py3270lib">
+<status status="PASS" starttime="20200618 12:59:54.940" endtime="20200618 12:59:54.940"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>xcsr</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:54.940" endtime="20200618 12:59:54.940"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 12:59:54.940" endtime="20200618 12:59:55.362"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:54.940" endtime="20200618 12:59:55.362"></status>
+</kw>
+<kw name="String Found" library="py3270lib">
+<doc>String Found verifies the the specified string (exactly) is found at the specified location.</doc>
+<arguments>
+<arg>3</arg>
+<arg>1</arg>
+<arg>MAIN MENU</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:55.362" endtime="20200618 12:59:55.362"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:48.597" endtime="20200618 12:59:55.362"></status>
+</kw>
+<kw name="Send Clear" library="py3270lib">
+<status status="PASS" starttime="20200618 12:59:55.362" endtime="20200618 12:59:55.691"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>UDFL</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:55.691" endtime="20200618 12:59:55.691"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 12:59:55.691" endtime="20200618 12:59:56.113"></status>
+</kw>
+<kw name="Fill Field By Label" library="py3270lib">
+<arguments>
+<arg>Company Number =====&gt;</arg>
+<arg>&amp;{environment}[companynumber]</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:56.113" endtime="20200618 12:59:56.769"></status>
+</kw>
+<kw name="Fill Field By Label" library="py3270lib">
+<arguments>
+<arg>DB2 Test Pool ID ===&gt;</arg>
+<arg>&amp;{environment}[pool]</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:56.769" endtime="20200618 12:59:58.519"></status>
+</kw>
+<kw name="Send Pf4" library="py3270lib">
+<status status="PASS" starttime="20200618 12:59:58.519" endtime="20200618 12:59:58.785"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>string found</arg>
+<arg>2</arg>
+<arg>2</arg>
+<arg>User defaults updated, new copy performed</arg>
+</arguments>
+<kw name="String Found" library="py3270lib">
+<doc>String Found verifies the the specified string (exactly) is found at the specified location.</doc>
+<arguments>
+<arg>2</arg>
+<arg>2</arg>
+<arg>User defaults updated, new copy performed</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:58.785" endtime="20200618 12:59:58.785"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:58.785" endtime="20200618 12:59:58.785"></status>
+</kw>
+<kw name="Get out of TSO/CICSK/SAREGKT" library="SharedKeywords">
+<doc>Gets out of TSO/CICSK/SAREGKT screen and goes to Menu Tubes with all the sessions.</doc>
+<kw name="Send Pf19" library="py3270lib">
+<status status="PASS" starttime="20200618 12:59:58.785" endtime="20200618 12:59:58.801"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200618 12:59:59.801" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200618 12:59:58.801" endtime="20200618 12:59:59.801"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:58.785" endtime="20200618 12:59:59.801"></status>
+</kw>
+<kw name="Log out of CICSK session" library="SharedKeywords">
+<doc>Logs out of CICSK session using name of CICSK (e.g. CK35) that is set in `Set environment` Keyword.</doc>
+<kw name="Send Pf" library="py3270lib">
+<arguments>
+<arg>24</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:59.801" endtime="20200618 12:59:59.801"></status>
+</kw>
+<kw name="Send Pf7" library="py3270lib">
+<status status="PASS" starttime="20200618 12:59:59.801" endtime="20200618 12:59:59.801"></status>
+</kw>
+<kw name="Fill Field By Label" library="py3270lib">
+<arguments>
+<arg>Comando ===&gt;</arg>
+<arg>FIND &amp;{environment}[cicsk]</arg>
+</arguments>
+<status status="PASS" starttime="20200618 12:59:59.801" endtime="20200618 13:00:02.426"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:02.426" endtime="20200618 13:00:02.848"></status>
+</kw>
+<kw name="Find Field" library="py3270lib">
+<doc>:returns:  tuple consisting of row, column</doc>
+<arguments>
+<arg>&amp;{environment}[cicsk]</arg>
+<arg>RIGHT</arg>
+</arguments>
+<msg timestamp="20200618 13:00:03.176" level="INFO">to_right_end=80</msg>
+<status status="PASS" starttime="20200618 13:00:02.848" endtime="20200618 13:00:03.285"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>i</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:03.285" endtime="20200618 13:00:03.285"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:03.285" endtime="20200618 13:00:03.707"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200618 13:00:04.707" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200618 13:00:03.707" endtime="20200618 13:00:04.707"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:59.801" endtime="20200618 13:00:04.707"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:48.597" endtime="20200618 13:00:04.707"></status>
+</kw>
+<status status="PASS" starttime="20200618 12:59:24.907" endtime="20200618 13:00:04.707"></status>
+</kw>
+<kw name="Get new customer" library="GetNewCustomer">
+<kw name="Log in to TSO" library="SharedKeywords">
+<doc>Logs into TSO using *S5TSO*.</doc>
+<kw name="Select menu Option" library="SharedKeywords">
+<doc>Selects given *${Option}* from Menu Tubes screen.</doc>
+<arguments>
+<arg>S5TSO</arg>
+</arguments>
+<kw name="Send Pf" library="py3270lib">
+<arguments>
+<arg>24</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:04.707" endtime="20200618 13:00:04.707"></status>
+</kw>
+<kw name="Send Pf7" library="py3270lib">
+<status status="PASS" starttime="20200618 13:00:04.707" endtime="20200618 13:00:04.707"></status>
+</kw>
+<kw name="Fill Field By Label" library="py3270lib">
+<arguments>
+<arg>Comando ===&gt;</arg>
+<arg>FIND ${Option}</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:04.707" endtime="20200618 13:00:07.348"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:07.348" endtime="20200618 13:00:07.770"></status>
+</kw>
+<kw name="Find Field" library="py3270lib">
+<doc>:returns:  tuple consisting of row, column</doc>
+<arguments>
+<arg>${Option}</arg>
+<arg>RIGHT</arg>
+</arguments>
+<msg timestamp="20200618 13:00:08.098" level="INFO">to_right_end=80</msg>
+<status status="PASS" starttime="20200618 13:00:07.770" endtime="20200618 13:00:08.207"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>S</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:08.207" endtime="20200618 13:00:08.207"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:08.207" endtime="20200618 13:00:08.660"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2 seconds</arg>
+</arguments>
+<msg timestamp="20200618 13:00:10.660" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20200618 13:00:08.660" endtime="20200618 13:00:10.660"></status>
+</kw>
+<kw name="Log Screen" library="py3270lib">
+<doc>Log Screen adds an image of the current screen from the terminal emulator to the Robot
+Framework test log.</doc>
+<msg timestamp="20200618 13:00:10.660" level="INFO" html="yes">&lt;html&gt;
+&lt;head&gt;
+ &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+&lt;/head&gt;
+ &lt;body&gt;
+  &lt;table border=0&gt;&lt;tr bgcolor=black&gt;&lt;td&gt;&lt;pre&gt;&lt;span style="color:red;background:black;font-weight:bold;font-style:normal"&gt; IKJ56700A ENTER USERID -&lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt;                                                       
+&lt;/span&gt;&lt;span style="color:black;background:red;font-weight:normal;font-style:normal"&gt; &lt;/span&gt;&lt;span style="color:green;background:black;font-weight:normal;font-style:normal"&gt;                                                                               
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</msg>
+<status status="PASS" starttime="20200618 13:00:10.660" endtime="20200618 13:00:10.660"></status>
+</kw>
+<status status="PASS" starttime="20200618 13:00:04.707" endtime="20200618 13:00:10.660"></status>
+</kw>
+<kw name="Credential Getter" library="user_password">
+<arguments>
+<arg>Cams user</arg>
+</arguments>
+<assign>
+<var>${Cams user}</var>
+</assign>
+<msg timestamp="20200618 13:00:10.660" level="INFO">${Cams user} = &lt;user_password.user_password.credential_getter.&lt;locals&gt;._cred_getter object at 0x000001F2C7239A90&gt;</msg>
+<status status="PASS" starttime="20200618 13:00:10.660" endtime="20200618 13:00:10.660"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>${Cams user.user}</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:10.660" endtime="20200618 13:00:10.660"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:10.660" endtime="20200618 13:00:11.098"></status>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<arguments>
+<arg>None</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:11.098" endtime="20200618 13:00:11.098"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>${Cams user.password}</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:11.098" endtime="20200618 13:00:11.098"></status>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<arguments>
+<arg>Info</arg>
+</arguments>
+<msg timestamp="20200618 13:00:11.098" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200618 13:00:11.098" endtime="20200618 13:00:11.098"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:11.098" endtime="20200618 13:00:12.645"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>ispf</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:12.645" endtime="20200618 13:00:12.645"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:12.645" endtime="20200618 13:00:14.910"></status>
+</kw>
+<kw name="String Found" library="py3270lib">
+<doc>String Found verifies the the specified string (exactly) is found at the specified location.</doc>
+<arguments>
+<arg>3</arg>
+<arg>29</arg>
+<arg>ISPF Primary Option Menu</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:14.910" endtime="20200618 13:00:14.910"></status>
+</kw>
+<status status="PASS" starttime="20200618 13:00:04.707" endtime="20200618 13:00:14.910"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>r</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:14.910" endtime="20200618 13:00:14.910"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:14.910" endtime="20200618 13:00:15.598"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>8</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:15.598" endtime="20200618 13:00:15.598"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:15.598" endtime="20200618 13:00:17.817"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:17.817" endtime="20200618 13:00:17.817"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:17.817" endtime="20200618 13:00:18.535"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:18.535" endtime="20200618 13:00:18.535"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:18.535" endtime="20200618 13:00:19.567"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200618 13:00:20.582" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200618 13:00:19.567" endtime="20200618 13:00:20.582"></status>
+</kw>
+<kw name="${index} IN RANGE [ 1 | 999 ]" type="for">
+<kw name="${index} = 1" type="foritem">
+<kw name="String Found" library="py3270lib">
+<doc>String Found verifies the the specified string (exactly) is found at the specified location.</doc>
+<arguments>
+<arg>3</arg>
+<arg>25</arg>
+<arg>Enter, Execute and Explain SQL</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:20.582" endtime="20200618 13:00:20.582"></status>
+</kw>
+<kw name="Set Variable If" library="BuiltIn">
+<doc>Sets variable based on the given condition.</doc>
+<arguments>
+<arg>'${variable_customer}' == 'Y'</arg>
+<arg>NEXI/01a.plastic_setup/customerdata/variable_customer.txt</arg>
+<arg>NEXI/01a.plastic_setup/customerdata/customer_data_parsed.txt</arg>
+</arguments>
+<assign>
+<var>${customer data file}</var>
+</assign>
+<msg timestamp="20200618 13:00:20.582" level="INFO">${customer data file} = NEXI/01a.plastic_setup/customerdata/variable_customer.txt</msg>
+<status status="PASS" starttime="20200618 13:00:20.582" endtime="20200618 13:00:20.582"></status>
+</kw>
+<kw name="Get New Customer From File" library="GetNewCustomer">
+<arguments>
+<arg>&amp;{environment}[owner]</arg>
+<arg>${customer data file}</arg>
+</arguments>
+<assign>
+<var>&amp;{customer}</var>
+</assign>
+<msg timestamp="20200618 13:00:20.582" level="FAIL">FileNotFoundError: [Errno 2] No such file or directory: 'NEXI/01a.plastic_setup/customerdata/variable_customer.txt'</msg>
+<status status="FAIL" starttime="20200618 13:00:20.582" endtime="20200618 13:00:20.582"></status>
+</kw>
+<status status="FAIL" starttime="20200618 13:00:20.582" endtime="20200618 13:00:20.582"></status>
+</kw>
+<status status="FAIL" starttime="20200618 13:00:20.582" endtime="20200618 13:00:20.582"></status>
+</kw>
+<status status="FAIL" starttime="20200618 13:00:04.707" endtime="20200618 13:00:20.582"></status>
+</kw>
+<kw name="Test teardown for Plastic Setup" library="PlasticSetupKeywords" type="teardown">
+<doc>Test Teardown for all tests for Plastic Setup process using in part `Settings`. Logs out of TSO,
+CICSK sessions and mainframe.</doc>
+<kw name="Get out of TSO/CICSK/SAREGKT" library="SharedKeywords">
+<doc>Gets out of TSO/CICSK/SAREGKT screen and goes to Menu Tubes with all the sessions.</doc>
+<kw name="Send Pf19" library="py3270lib">
+<status status="PASS" starttime="20200618 13:00:20.582" endtime="20200618 13:00:20.598"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200618 13:00:21.598" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200618 13:00:20.598" endtime="20200618 13:00:21.598"></status>
+</kw>
+<status status="PASS" starttime="20200618 13:00:20.582" endtime="20200618 13:00:21.598"></status>
+</kw>
+<kw name="Log out of TSO session" library="SharedKeywords">
+<doc>Logs out of TSO session using *S5TSO* `Sessid`.</doc>
+<kw name="Send Pf" library="py3270lib">
+<arguments>
+<arg>24</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:21.598" endtime="20200618 13:00:21.629"></status>
+</kw>
+<kw name="Send Pf7" library="py3270lib">
+<status status="PASS" starttime="20200618 13:00:21.629" endtime="20200618 13:00:21.629"></status>
+</kw>
+<kw name="Fill Field By Label" library="py3270lib">
+<arguments>
+<arg>Comando ===&gt;</arg>
+<arg>FIND S5TSO</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:21.629" endtime="20200618 13:00:24.254"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:24.254" endtime="20200618 13:00:24.692"></status>
+</kw>
+<kw name="Find Field" library="py3270lib">
+<doc>:returns:  tuple consisting of row, column</doc>
+<arguments>
+<arg>S5TSO</arg>
+<arg>RIGHT</arg>
+</arguments>
+<msg timestamp="20200618 13:00:25.020" level="INFO">to_right_end=80</msg>
+<status status="PASS" starttime="20200618 13:00:24.692" endtime="20200618 13:00:25.129"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>i</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:25.129" endtime="20200618 13:00:25.129"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:25.129" endtime="20200618 13:00:25.551"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200618 13:00:26.567" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200618 13:00:25.551" endtime="20200618 13:00:26.567"></status>
+</kw>
+<status status="PASS" starttime="20200618 13:00:21.598" endtime="20200618 13:00:26.567"></status>
+</kw>
+<kw name="Log out of CICSK session" library="SharedKeywords">
+<doc>Logs out of CICSK session using name of CICSK (e.g. CK35) that is set in `Set environment` Keyword.</doc>
+<kw name="Send Pf" library="py3270lib">
+<arguments>
+<arg>24</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:26.567" endtime="20200618 13:00:26.567"></status>
+</kw>
+<kw name="Send Pf7" library="py3270lib">
+<status status="PASS" starttime="20200618 13:00:26.567" endtime="20200618 13:00:26.567"></status>
+</kw>
+<kw name="Fill Field By Label" library="py3270lib">
+<arguments>
+<arg>Comando ===&gt;</arg>
+<arg>FIND &amp;{environment}[cicsk]</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:26.567" endtime="20200618 13:00:29.192"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:29.192" endtime="20200618 13:00:29.692"></status>
+</kw>
+<kw name="Find Field" library="py3270lib">
+<doc>:returns:  tuple consisting of row, column</doc>
+<arguments>
+<arg>&amp;{environment}[cicsk]</arg>
+<arg>RIGHT</arg>
+</arguments>
+<msg timestamp="20200618 13:00:30.020" level="INFO">to_right_end=80</msg>
+<status status="PASS" starttime="20200618 13:00:29.692" endtime="20200618 13:00:30.129"></status>
+</kw>
+<kw name="Send String" library="py3270lib">
+<doc>Send a string to the screen at the current cursor location or at
+screen co-ordinates `ypos`/`xpos` if they are both given.
+Co-ordinates are 1 based, as listed in the status area of the
+terminal.</doc>
+<arguments>
+<arg>i</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:30.129" endtime="20200618 13:00:30.129"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:30.129" endtime="20200618 13:00:30.598"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20200618 13:00:31.598" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20200618 13:00:30.598" endtime="20200618 13:00:31.598"></status>
+</kw>
+<status status="PASS" starttime="20200618 13:00:26.567" endtime="20200618 13:00:31.598"></status>
+</kw>
+<kw name="Send Pf" library="py3270lib">
+<arguments>
+<arg>24</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:31.598" endtime="20200618 13:00:31.598"></status>
+</kw>
+<kw name="Send Pf7" library="py3270lib">
+<status status="PASS" starttime="20200618 13:00:31.598" endtime="20200618 13:00:31.598"></status>
+</kw>
+<kw name="Log out of mainframe" library="SharedKeywords">
+<doc>Logs out of mainframe.</doc>
+<kw name="Fill Field By Label" library="py3270lib">
+<arguments>
+<arg>Comando ===&gt;</arg>
+<arg>logoff</arg>
+</arguments>
+<status status="PASS" starttime="20200618 13:00:31.598" endtime="20200618 13:00:34.223"></status>
+</kw>
+<kw name="Send Enter" library="py3270lib">
+<doc>Send Enter performs the equivalent of pressing Enter on the keyboard in a terminal emulator.
+Send Enter additionally performs the equivalent of a human operator in that it notes the current
+content of the screen and after pressing enter waits for a change in what is on the screen.</doc>
+<status status="PASS" starttime="20200618 13:00:34.223" endtime="20200618 13:00:34.692"></status>
+</kw>
+<status status="PASS" starttime="20200618 13:00:31.598" endtime="20200618 13:00:34.692"></status>
+</kw>
+<status status="PASS" starttime="20200618 13:00:20.582" endtime="20200618 13:00:34.692"></status>
+</kw>
+<status status="FAIL" starttime="20200618 12:59:24.907" endtime="20200618 13:00:34.692" critical="yes">FileNotFoundError: [Errno 2] No such file or directory: 'NEXI/01a.plastic_setup/customerdata/variable_customer.txt'</status>
+</test>
+<status status="FAIL" starttime="20200618 12:59:24.344" endtime="20200618 13:00:34.692"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="1Adot1Pre-Batch">1Adot1Pre-Batch</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200618 12:59:24.813" level="ERROR">Error in file 'C:\RobotFramework\PyCharm\NEXI\SharedKeywords.robot': Importing test library 'builtin' failed: ModuleNotFoundError: No module named 'builtin'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Program Files\Python38\Scripts\robot.exe
+  C:\RobotFramework\rf-libraries
+  c:\program files\python38\python38.zip
+  c:\program files\python38\DLLs
+  c:\program files\python38\lib
+  c:\program files\python38
+  c:\program files\python38\lib\site-packages
+  c:\program files\python38\lib\site-packages\win32
+  c:\program files\python38\lib\site-packages\win32\lib
+  c:\program files\python38\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20200618 12:59:24.844" level="ERROR">Error in file 'C:\RobotFramework\PyCharm\NEXI\Environments.robot': Importing test library 'builtin' failed: ModuleNotFoundError: No module named 'builtin'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Program Files\Python38\Scripts\robot.exe
+  C:\RobotFramework\rf-libraries
+  c:\program files\python38\python38.zip
+  c:\program files\python38\DLLs
+  c:\program files\python38\lib
+  c:\program files\python38
+  c:\program files\python38\lib\site-packages
+  c:\program files\python38\lib\site-packages\win32
+  c:\program files\python38\lib\site-packages\win32\lib
+  c:\program files\python38\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20200618 12:59:25.953" level="WARN">[WinError 10061] No connection could be made because the target machine actively refused it</msg>
+<msg timestamp="20200618 12:59:28.000" level="WARN">[WinError 10061] No connection could be made because the target machine actively refused it</msg>
+<msg timestamp="20200618 12:59:30.047" level="WARN">[WinError 10061] No connection could be made because the target machine actively refused it</msg>
+<msg timestamp="20200618 12:59:32.094" level="WARN">[WinError 10061] No connection could be made because the target machine actively refused it</msg>
+<msg timestamp="20200618 12:59:34.110" level="WARN">[WinError 10061] No connection could be made because the target machine actively refused it</msg>
+</errors>
+</robot>

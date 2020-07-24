@@ -1,0 +1,37 @@
+
+in getnewcustomer.py add automatic backup with date
+in writeplastic to file  create the file if it does not exist
+
+
+standardize variable names to lower_case_with_underscore //but why?
+
+
+change paths to take /pycharm/nexi as project directory???
+change keywords to have arguments?
+
+
+
+#TODO make CAST status change into a universal keyword - add plastic and stat/rsn code as arguments
+
+
+
+#TODO make a variable file with piedino and information related to piedino - iban, xref, etc.
+    #this is a high-level goal
+
+
+#TODO test post-batch test after batch ---
+
+
+#TODO change log catalogue
+
+#TODO checks if next screen has appeared have to be moved to begnning of next keyword foll all SCREEN keywords
+
+#TODO make iban get abi from piedino?
+
+#TODO  for PCD checks consider CG field 3104 = DBIT, 33155 = CSI, if it's DFLT, then leave DFLT
+
+#TODO make test work in IC6 --- it's complicated
+
+#TODO make tests not overwrite logs
+
+#TODO find a way to run test several times

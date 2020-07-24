@@ -1,0 +1,52 @@
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+ <body>
+  <table border=0><tr bgcolor=black><td><pre><span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"> EGKT</span><span style="color:white;background:black;font-weight:bold;font-style:normal"> --------------- EDITING JCL FOR A COMPUTER OPERA      CHARS 'XX1' changed 
+ Command ===&gt;</span><span style="color:red;background:black;font-weight:bold;font-style:normal">                                                 </span><span style="color:white;background:black;font-weight:bold;font-style:normal"> Scroll ===&gt;</span><span style="color:red;background:black;font-weight:bold;font-style:normal"> CSR </span><span style="color:white;background:black;font-weight:bold;font-style:normal"> 
+</span><span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal">                                                                                
+ Edit JCL below and press</span><span style="color:white;background:black;font-weight:bold;font-style:normal"> END</span><span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"> to finish or</span><span style="color:white;background:black;font-weight:bold;font-style:normal"> CANCEL</span><span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"> to reject:                    
+                                                                                
+ Application           :</span><span style="color:white;background:black;font-weight:bold;font-style:normal"> TESTJOBESTEMPOR  </span><span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal"> prova                                
+ Operation             :</span><span style="color:white;background:black;font-weight:bold;font-style:normal"> CPU1 20 </span><span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal">                                               
+ Status of operation   :</span><span style="color:white;background:black;font-weight:bold;font-style:normal"> Waiting                </span><span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal">                                
+ Jobname               :</span><span style="color:white;background:black;font-weight:bold;font-style:normal"> TSTAUTO1</span><span style="color:deepSkyBlue;background:black;font-weight:normal;font-style:normal">          JCL last updated by:                 
+                                                                                
+</span><span style="color:green;background:black;font-weight:normal;font-style:normal"> 000188 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.CRDCOMBO.SUPP,DISP=SHR       
+</span><span style="color:red;background:black;font-weight:bold;font-style:normal"> 000189</span><span style="color:green;background:black;font-weight:normal;font-style:normal"> //SORTIN    DD DSN=ICPS.ITST.TAUT.CMBPRI.TEST13</span><span style="color:black;background:red;font-weight:normal;font-style:normal">,</span><span style="color:green;background:black;font-weight:normal;font-style:normal">DISP=SHR                
+ 000190 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.CARDORDR.M2.SUPP,DISP=SHR    
+ 000191 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.ACCTMOD,DISP=SHR             
+ 000192 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.DEVBLK.M2,DISP=SHR           
+ 000193 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.CUSTMOD.M2,DISP=SHR          
+ 000194 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.CARDMOD.M2,DISP=SHR          
+ 000195 //*ORTIN    DD DSN=XTRN852.IC1UL158.CARDMOD.M2.SPNDD,DISP=SHR           
+ 000196 //*ORTIN    DD DSN=XTRN852.IC1UL158.CARDMOD.M2.VUOTO,DISP=SHR           
+ 000197 //*ORTIN    DD DSN=XTRN852.IC1UL158.M2.CARDMOD.T4619,DISP=SHR           
+ 000198 //*                                                                     
+ 000199 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.CARDORDR.M1,DISP=SHR         
+ 000200 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.CARDORDR.HCE,DISP=SHR        
+ 000201 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.DEVBLK.M1,DISP=SHR           
+ 000202 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.CARDMOD.M1,DISP=SHR          
+ 000203 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.CARDREI.M1,DISP=SHR          
+ 000204 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.CARDREIM.M1,DISP=SHR         
+ 000205 //*ORTIN    DD DSN=&amp;NVSM..IC&amp;ICPSSYS.UL158.CUSTMOD.M1,DISP=SHR          
+ 000206 //SORTOUT   DD DSN=&amp;CARDORDR,                                           
+ 000207 //             DISP=(,PASS),                                            
+ 000208 //             SPACE=(CYL,(1,5),RLSE),                                  
+ 000209 //             DCB=(*.SORTIN)                                           
+ 000210 //SYSOUT    DD SYSOUT=*                                                 
+ 000211 //SYSIN     DD *                                                        
+ 000212  SORT FIELDS=(1,27,CH,A,28,3,PD,A)                                      
+ 000213  SUM FIELDS=NONE                                                        
+ 000214 //*                                                                     
+ 000215 //********************************************************************* 
+ 000216 //*   PS010: DB2 UTIL LOAD OF CUSTOMER WORKING TABLE IC158T *         * 
+ 000217 //*                                                                   * 
+ 000218 //********************************************************************* 
+ 000219 //PS010   EXEC PGM=DSNUTILB,PARM='&amp;DB2SYS'                              
+ 000220 //STEPLIB   DD DSN=&amp;DB2LOAD,DISP=SHR                                    
+</span></pre></td></tr>
+  </table>
+ </body>
+</html>
